@@ -1,4 +1,5 @@
-/*
+/**
+ * @license
     http://www.JSON.org/json2.js
     2011-02-23
 
@@ -7,7 +8,8 @@
     NO WARRANTY EXPRESSED OR IMPLIED. USE AT YOUR OWN RISK.
 
     See http://www.JSON.org/js.html
-
+*/
+/*
 
     This code should be minified before deployment.
     See http://javascript.crockford.com/jsmin.html
