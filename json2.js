@@ -350,8 +350,8 @@ if (!JSON) {
 
 // If the JSON object does not yet have a stringify method, give it one.
 
-    if (typeof JSON.stringify !== 'function') {
-        JSON.stringify = function (value, replacer, space) {
+    if (typeof JSON.stringifyJS !== 'function') {
+        JSON.stringifyJS = function (value, replacer, space) {
 
 // The stringify method takes a value and an optional replacer, and an optional
 // space parameter, and returns a JSON text. The replacer can be a function
@@ -392,6 +392,9 @@ if (!JSON) {
 
             return str('', {'': value});
         };
+    }
+    if (typeof JSON.stringify !== 'function') {
+        JSON.stringify = JSON.stringifyJS;
     }
 
 
